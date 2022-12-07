@@ -1,5 +1,5 @@
 /**
-  * Represents the game as whole.
+  * Represents the game as a whole.
   */
 public class Game {
     /**
