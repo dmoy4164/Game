@@ -195,21 +195,23 @@ public class Game {
         if (item.equalsIgnoreCase("water")){
             if (water>0){
                 uHealth = 100;
+                water = water-1;
                 return ("You drank water. HP restored to full.");
             } else {
                 return ("You have no water!");
             }
         }
-        water= water-1;
+
         if (item.equalsIgnoreCase("bread")){
             if (bread>0){
                 eHealth = eHealth -75;
+                bread = bread-1;
                 return ("You threw your bread at " + eName + ". They take 75 damage.");
             } else {
                 return ("You have no bread!");
             }
         }
-        bread = bread-1;
+
         return "";
     }
     /**
